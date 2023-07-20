@@ -158,8 +158,7 @@ const PRODUCTS_QUERY = `
             edges {
               node {
                 availableForSale
-                compareAtPrice
-                compareAtPriceV2 {
+                compareAtPrice {
                   amount
                   currencyCode
                 }
@@ -169,8 +168,7 @@ const PRODUCTS_QUERY = `
                   id
                   originalSrc
                 }
-                price
-                priceV2 {
+                price {
                   amount
                   currencyCode
                 }

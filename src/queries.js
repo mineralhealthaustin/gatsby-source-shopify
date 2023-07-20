@@ -44,7 +44,6 @@ export const ARTICLES_QUERY = `
           publishedAt
           tags
           title
-          url
           seo {
             title
             description
@@ -67,7 +66,6 @@ export const BLOGS_QUERY = `
           id
           handle
           title
-          url
         }
       }
     }
@@ -131,18 +129,6 @@ export const PRODUCTS_QUERY = `
               }
             }
           }
-          metafields(first: 250) {
-            edges {
-              node {
-                description
-                id
-                key
-                namespace
-                value
-                valueType
-              }
-            }
-          }
           onlineStoreUrl
           options {
             id
@@ -168,8 +154,7 @@ export const PRODUCTS_QUERY = `
             edges {
               node {
                 availableForSale
-                compareAtPrice
-                compareAtPriceV2 {
+                compareAtPrice {
                   amount
                   currencyCode
                 }
@@ -179,20 +164,7 @@ export const PRODUCTS_QUERY = `
                   id
                   originalSrc
                 }
-                metafields(first: 250) {
-                  edges {
-                    node {
-                      description
-                      id
-                      key
-                      namespace
-                      value
-                      valueType
-                    }
-                  }
-                }
-                price
-                priceV2 {
+                price {
                   amount
                   currencyCode
                 }
@@ -205,20 +177,6 @@ export const PRODUCTS_QUERY = `
                 title
                 weight
                 weightUnit
-                presentmentPrices(first: 250) {
-                  edges {
-                    node {
-                      price {
-                        amount
-                        currencyCode
-                      }
-                      compareAtPrice {
-                        amount
-                        currencyCode
-                      }
-                    }
-                  }
-                }
               }
             }
           }
@@ -269,7 +227,6 @@ export const PAGES_QUERY = `
           body
           bodySummary
           updatedAt
-          url
         }
       }
     }
