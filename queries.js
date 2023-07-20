@@ -1,7 +1,7 @@
 "use strict";
 
 exports.__esModule = true;
-exports.PAGES_QUERY = exports.SHOP_POLICIES_QUERY = exports.PRODUCTS_QUERY = exports.COLLECTIONS_QUERY = exports.BLOGS_QUERY = exports.ARTICLES_QUERY = void 0;
+exports.SHOP_POLICIES_QUERY = exports.PRODUCTS_QUERY = exports.PAGES_QUERY = exports.COLLECTIONS_QUERY = exports.BLOGS_QUERY = exports.ARTICLES_QUERY = void 0;
 const ARTICLES_QUERY = `
   query GetArticles($first: Int!, $after: String) {
     articles(first: $first, after: $after) {

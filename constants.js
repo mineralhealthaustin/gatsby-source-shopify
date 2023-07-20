@@ -1,10 +1,11 @@
 "use strict";
 
 exports.__esModule = true;
-exports.NODE_TO_ENDPOINT_MAPPING = exports.CONTENT = exports.SHOP = exports.PAGE = exports.SHOP_POLICY = exports.PRODUCT_VARIANT_METAFIELD = exports.PRODUCT_METAFIELD = exports.PRODUCT_VARIANT = exports.PRODUCT_OPTION = exports.PRODUCT = exports.COMMENT = exports.COLLECTION = exports.BLOG = exports.ARTICLE = exports.TYPE_PREFIX = void 0;
+exports.TYPE_PREFIX = exports.SHOP_POLICY = exports.SHOP = exports.PRODUCT_VARIANT_METAFIELD = exports.PRODUCT_VARIANT = exports.PRODUCT_OPTION = exports.PRODUCT_METAFIELD = exports.PRODUCT = exports.PAGE = exports.NODE_TO_ENDPOINT_MAPPING = exports.CONTENT = exports.COMMENT = exports.COLLECTION = exports.BLOG = exports.ARTICLE = void 0;
 // Node prefix
-const TYPE_PREFIX = `Shopify`; // Node types
+const TYPE_PREFIX = `Shopify`;
 
+// Node types
 exports.TYPE_PREFIX = TYPE_PREFIX;
 const ARTICLE = `Article`;
 exports.ARTICLE = ARTICLE;
