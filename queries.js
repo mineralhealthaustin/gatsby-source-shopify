@@ -48,7 +48,6 @@ const ARTICLES_QUERY = `
           publishedAt
           tags
           title
-          url
           seo {
             title
             description
@@ -71,7 +70,6 @@ const BLOGS_QUERY = `
           id
           handle
           title
-          url
         }
       }
     }
@@ -135,18 +133,6 @@ const PRODUCTS_QUERY = `
               }
             }
           }
-          metafields(first: 250) {
-            edges {
-              node {
-                description
-                id
-                key
-                namespace
-                value
-                valueType
-              }
-            }
-          }
           onlineStoreUrl
           options {
             id
@@ -183,18 +169,6 @@ const PRODUCTS_QUERY = `
                   id
                   originalSrc
                 }
-                metafields(first: 250) {
-                  edges {
-                    node {
-                      description
-                      id
-                      key
-                      namespace
-                      value
-                      valueType
-                    }
-                  }
-                }
                 price
                 priceV2 {
                   amount
@@ -209,20 +183,6 @@ const PRODUCTS_QUERY = `
                 title
                 weight
                 weightUnit
-                presentmentPrices(first: 250) {
-                  edges {
-                    node {
-                      price {
-                        amount
-                        currencyCode
-                      }
-                      compareAtPrice {
-                        amount
-                        currencyCode
-                      }
-                    }
-                  }
-                }
               }
             }
           }
@@ -273,7 +233,6 @@ const PAGES_QUERY = `
           body
           bodySummary
           updatedAt
-          url
         }
       }
     }
